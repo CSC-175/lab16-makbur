@@ -11,7 +11,14 @@ int gcf(int a, int b) {
 }
 
 int main() {
-    // Test case: Find the GCF of 888 and 54
-    cout << gcf(888, 54) << endl;  // Expected output: 6
+    int a, b;
+
+    // Prompt user for input
+    cout << "Enter two integer values you want to find the GCF of: ";
+    cin >> a >> b;
+
+    // Output the result of the GCF calculation
+    cout << "The greatest common factor of " << a << " and " << b << " is " << gcf(a, b) << endl;
+
     return 0;
 }
