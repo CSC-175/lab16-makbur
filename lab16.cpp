@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// Define the GCF function before main
+// Recursive function to calculate the GCF using the Euclidean algorithm
 int gcf(int a, int b)
 {
     // Base case: If b is 0, the GCF is a
@@ -12,6 +12,7 @@ int gcf(int a, int b)
     return gcf(b, a % b);
 }
 
+// Main function to run the program
 int main()
 {
     int a, b;
